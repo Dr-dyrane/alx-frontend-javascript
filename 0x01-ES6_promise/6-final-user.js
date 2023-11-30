@@ -11,12 +11,12 @@ import uploadPhoto from './5-photo-reject';
  */
 export default async function handleProfileSignup (firstName, lastName, fileName) {
   return Promise
-  .allSettled([signUpUser(firstName, lastName), uploadPhoto(fileName)])
-  .then((response) => (
-    response.map((user) => ({
-      status: user.status,
-      value: user.status === 'fulfilled' ? user.value : String(user.reason),
-    }))
-  ));
+    .allSettled([signUpUser(firstName, lastName), uploadPhoto(fileName)])
+    .then((response) => (
+      response.map((user) => ({
+        status: user.status,
+        value: user.status === 'fulfilled' ? user.value : String(user.reason)
+      }))
+    ));
  }
  
