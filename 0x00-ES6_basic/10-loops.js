@@ -14,5 +14,5 @@ export default function appendToEachArrayValue (array, appendString) {
   }
 
   // Returning the modified array
-  return array;
+  return new_array;
 }
