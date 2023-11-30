@@ -6,11 +6,11 @@
  * @returns {Array} The modified array.
  */
 export default function appendToEachArrayValue (array, appendString) {
-  const array = [];
+  const new_array = [];
   // Iterating through each value in the array
   for (const value of array) {
     // Modifying the value by appending the specified string
-    array.push(appendString + value);
+    new_array.push(appendString + value);
   }
 
   // Returning the modified array
