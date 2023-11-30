@@ -1,9 +1,10 @@
-/**
- * Concatenates elements of an array using the pipe (|) separator.
- * @param {Array} reportWithIterator - An array of elements to concatenate.
- * @returns {string} A string formed by joining array elements with pipe separators.
- */
-export default function iterateThroughObject (reportWithIterator) {
-  // Use the join method to concatenate array elements with the pipe separator
-  return reportWithIterator.join(' | ');
+export default function iterateThroughObject(reportWithIterator) {
+  const employees = [];
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const employee of reportWithIterator) {
+    employees.push(employee);
+  }
+
+  return employees.join(' | ');
 }
