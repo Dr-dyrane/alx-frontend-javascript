@@ -15,7 +15,7 @@ export default class SkyHighBuilding extends Building {
    * @param {Number} sqft - The square footage of the building.
    * @param {Number} floors - The number of floors in the building.
    */
-  constructor(sqft, floors) {
+  constructor (sqft, floors) {
     // Call the constructor of the parent class (Building)
     super(sqft);
 
@@ -32,7 +32,7 @@ export default class SkyHighBuilding extends Building {
    *
    * @returns {Number} The square footage of the building.
    */
-  get sqft() {
+  get sqft () {
     return this._sqft;
   }
 
@@ -41,7 +41,7 @@ export default class SkyHighBuilding extends Building {
    *
    * @returns {Number} The number of floors in the building.
    */
-  get floors() {
+  get floors () {
     return this._floors;
   }
 
@@ -51,7 +51,7 @@ export default class SkyHighBuilding extends Building {
    *
    * @returns {String} The evacuation warning message.
    */
-  evacuationWarningMessage() {
+  evacuationWarningMessage () {
     return `Evacuate slowly the ${this._floors} floors`;
   }
 }

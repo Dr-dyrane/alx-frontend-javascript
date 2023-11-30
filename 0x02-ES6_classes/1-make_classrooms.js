@@ -6,7 +6,7 @@ import ClassRoom from './0-classroom.js';
  * @function initializeRooms
  * @returns {Array<ClassRoom>} An array of ClassRoom objects.
  */
-export default function initializeRooms() {
+export default function initializeRooms () {
   /**
    * An array of ClassRoom objects with specific sizes.
    * @type {Array<ClassRoom>}
