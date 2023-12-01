@@ -4,7 +4,7 @@
  *
  * @constructor
  */
-export default function getNeighborhoodsList () {
+export default function getNeighborhoodsList() {
   /**
      * Initialize an array property named sanFranciscoNeighborhoods with some default values.
      *

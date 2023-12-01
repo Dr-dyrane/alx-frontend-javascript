@@ -4,7 +4,7 @@
  * @param {...any} args - Any number of arguments.
  * @returns {number} The count of arguments passed.
  */
-export default function returnHowManyArguments (...args) {
+export default function returnHowManyArguments(...args) {
   /**
      * Using the rest parameter (...args) to capture any number of arguments passed to the function.
      *

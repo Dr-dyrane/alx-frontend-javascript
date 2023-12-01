@@ -6,7 +6,7 @@
  * @param {string} capita - The capita value to be included in the budget object.
  * @returns {Object} The budget object containing income, GDP, and capita properties.
  */
-export default function getBudgetObject (income, gdp, capita) {
+export default function getBudgetObject(income, gdp, capita) {
   /**
      * The budget object containing income, GDP, and capita properties.
      *
@@ -18,7 +18,7 @@ export default function getBudgetObject (income, gdp, capita) {
   const budget = {
     income,
     gdp,
-    capita
+    capita,
   };
 
   // Returning the budget object

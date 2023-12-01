@@ -5,7 +5,7 @@
  * @param {Array} employees - An array of employees belonging to the department.
  * @returns {Object} An object representing the department and its employees.
  */
-export default function createEmployeesObject (departmentName, employees) {
+export default function createEmployeesObject(departmentName, employees) {
   /**
      * The object representing the department and its employees.
      *
@@ -14,6 +14,6 @@ export default function createEmployeesObject (departmentName, employees) {
      * @property {Array} employees - An array of employees belonging to the department.
      */
   return {
-    [departmentName]: employees
+    [departmentName]: employees,
   };
 }

@@ -1,9 +1,10 @@
 /**
- * Returns a description of San Francisco, including income, GDP, and capita information for a specific year.
+ * Returns a description of San Francisco, including income, GDP,
+ *  and capita information for a specific year.
  *
  * @returns {string} A formatted string describing San Francisco's economic details.
  */
-export default function getSanFranciscoDescription () {
+export default function getSanFranciscoDescription() {
   /**
      * The year for which the economic details are provided.
      *
@@ -22,7 +23,7 @@ export default function getSanFranciscoDescription () {
   const budget = {
     income: '$119,868',
     gdp: '$154.2 billion',
-    capita: '$178,479'
+    capita: '$178,479',
   };
 
   /**
