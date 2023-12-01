@@ -9,14 +9,13 @@ import uploadPhoto from './5-photo-reject';
  * @param {string} fileName - The name of the file to upload.
  * @returns {Promise<Array>} An array containing objects with status and value.
  */
-export default async function handleProfileSignup (firstName, lastName, fileName) {
+export default async function handleProfileSignup(firstName, lastName, fileName) {
   return Promise
     .allSettled([signUpUser(firstName, lastName), uploadPhoto(fileName)])
     .then((response) => (
       response.map((user) => ({
         status: user.status,
-        value: user.status === 'fulfilled' ? user.value : String(user.reason)
+        value: user.status === 'fulfilled' ? user.value : String(user.reason),
       }))
     ));
- }
- 
+}

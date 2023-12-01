@@ -6,7 +6,7 @@
  * @param {Promise} promise - The Promise to handle the response from.
  * @returns {Promise} A Promise that resolves with a successful response or rejects with an error.
  */
-export default function handleResponseFromAPI (promise) {
+export default function handleResponseFromAPI(promise) {
   /* eslint-disable */
     return promise
       .then(() => ({ status: 200, body: 'success' })) // Resolves with a successful response

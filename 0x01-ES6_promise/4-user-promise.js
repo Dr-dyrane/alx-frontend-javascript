@@ -9,10 +9,10 @@
  * const result = await signUpUser('John', 'Doe');
  * console.log(result); // { firstName: 'John', lastName: 'Doe' }
  */
-function signUpUser (firstName, lastName) {
+function signUpUser(firstName, lastName) {
   return Promise.resolve({
     firstName,
-    lastName
+    lastName,
   });
 }
 
